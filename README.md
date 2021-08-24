@@ -3,6 +3,8 @@
 
 Simples projeto para aprender mais sobre NextJs, CMS e GraphQL
 
+## Veja o projeto no ar
+
 ## O que eu aprendi?
  - Conceitos de query e mutations no GraphQL e como realizar um query
  - Utilizar o graphql-request para fazer querys no back-end 
