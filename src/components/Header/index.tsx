@@ -3,7 +3,7 @@ import * as S from './styles'
 
 export const Header = () => (
   <S.Wrapper>
-    <S.Title>CSMGraphQL</S.Title>
+    <S.Title>CMSGraphQL</S.Title>
     <S.Nav>
       <ul>
         <li>

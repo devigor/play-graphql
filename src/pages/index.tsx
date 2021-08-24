@@ -1,16 +1,34 @@
-import { Container } from 'components/Container'
-import { Header } from 'components/Header'
+import { GetStaticProps } from 'next'
+
 import client from 'graphql/client'
 import { GetAllProductsQuery } from 'graphql/generated/graphql'
 import { GET_ALL_PRODUCST } from 'graphql/queries'
-import { GetStaticProps } from 'next'
 
-export default function Home() {
+import { Container } from 'components/Container'
+import { Header } from 'components/Header'
+import { Home } from 'templates/Home'
+
+export type Photo = {
+  url: string
+}
+
+export type Product = {
+  productTitle: string
+  productValue: number
+  productSlug: string
+  productPhoto: Photo[]
+}
+
+export type ProductsProps = {
+  products: Product[]
+}
+
+export default function Index({ products }: ProductsProps) {
   return (
     <>
       <Header />
       <Container>
-        <p>OI</p>
+        <Home products={products} />
       </Container>
     </>
   )

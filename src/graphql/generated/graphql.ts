@@ -2299,3 +2299,17 @@ export type GetAllProductsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type GetAllProductsQuery = { __typename?: 'Query', products: Array<{ __typename?: 'Product', productSlug: string, productTitle: string, productValue: number, productPhoto: Array<{ __typename?: 'Asset', url: string }> }> };
+
+export type GetProductsBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+export type GetProductsBySlugQuery = { __typename?: 'Query', product?: Maybe<{ __typename?: 'Product', productTitle: string, productValue: number, productSlug: string, productPhoto: Array<{ __typename?: 'Asset', url: string }>, productDescription: { __typename?: 'RichText', html: string } }> };
+
+export type GetTheTwoInitialProductsQueryVariables = Exact<{
+  first: Scalars['Int'];
+}>;
+
+
+export type GetTheTwoInitialProductsQuery = { __typename?: 'Query', products: Array<{ __typename?: 'Product', productTitle: string, productValue: number, productSlug: string, productPhoto: Array<{ __typename?: 'Asset', url: string }> }> };
