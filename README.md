@@ -4,6 +4,7 @@
 Simples projeto para aprender mais sobre NextJs, CMS e GraphQL
 
 ## Veja o projeto no ar
+https://play-graphql.vercel.app/
 
 ## O que eu aprendi?
  - Conceitos de query e mutations no GraphQL e como realizar um query
